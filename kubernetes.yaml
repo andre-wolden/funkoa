@@ -39,6 +39,7 @@ metadata:
   name: funkoa
   annotations:
     kubernetes.io/ingress.class: traefik
+    traefik.ingress.kubernetes.io/redirect-entry-point: https
 spec:
   rules:
     - host: www.funkoa.com
