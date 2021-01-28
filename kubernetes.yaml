@@ -1,0 +1,59 @@
+---
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: funkoa
+  labels:
+    app: funkoa
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: funkoa
+  template:
+    metadata:
+      labels:
+        app: funkoa
+    spec:
+      containers:
+        - name: funkoa
+          image: woldena/funkoa:0.3
+          ports:
+            - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: funkoa
+spec:
+  ports:
+    - name: http
+      port: 80
+      targetPort: 80
+  selector:
+    app: funkoa
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: funkoa
+  annotations:
+    kubernetes.io/ingress.class: traefik
+spec:
+  rules:
+    - host: www.funkoa.com
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: funkoa
+              servicePort: http
+    - host: funkoa.com
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: funkoa
+              servicePort: http
+  tls:
+    - secretName: funkoa-tls-cert
