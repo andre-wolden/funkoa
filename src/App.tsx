@@ -7,6 +7,7 @@ function App() {
       <header>
         <h1>Welcome to Funkoa!</h1>
         <p>Funkoa runs on my private kubernetes raspberry-pi cluster. Here we deploy stuff to have fun and practice full stack coding.</p>
+          <img className={'pina'} src={'/images/pexels-i̇brahim-hakkı-uçman-4134384.jpg'}></img>
       </header>
     </div>
   );
