@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: funkoa
-          image: woldena/funkoa:0.3
+          image: woldena/funkoa:0.4
           ports:
             - containerPort: 80
 ---
