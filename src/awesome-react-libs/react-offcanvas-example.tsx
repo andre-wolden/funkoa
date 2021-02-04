@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { OffCanvas, OffCanvasMenu, OffCanvasBody } from "react-offcanvas";
 import MyPlanet from "./react-planet-example";
 
