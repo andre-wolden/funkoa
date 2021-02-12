@@ -6,7 +6,7 @@
     font-family: Mango;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     .h1-welcome {
         font-size: 72px;
     }
