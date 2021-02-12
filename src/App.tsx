@@ -1,26 +1,53 @@
 import React from "react";
 import "./App.css";
-import ReactOffCanvasExample from "./awesome-react-libs/react-offcanvas-example";
+import Burger from "./awesome-react-libs/burger/burger";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./routes/Home";
+import About from "./routes/About";
+import Admin from "./routes/Admin";
 
-const App = (): JSX.Element => (
-    <div className="App">
-        <div className="header-wrapper">
-            <div>Burger Menu if narrow, or just the content of the menu</div>
-            <div>LOGO</div>
-        </div>
-        <div className="body-wrapper">
-            <h1>Welcome to Funkoa!</h1>
-            <p>
-                Funkoa runs on my private kubernetes raspberry-pi cluster. Here we deploy stuff to have fun and practice
-                full stack coding.
-            </p>
-            <img alt="digs-pina-colada" className={"pina"} src={"/images/pexels-héctor-de-la-torre-4701132.jpg"}></img>
-
-            <p>gg ^^</p>
-
-            <ReactOffCanvasExample />
-        </div>
-    </div>
-);
+const App = (): JSX.Element => {
+    return (
+        <Router>
+            <div>
+                <div>
+                    <Burger />
+                </div>
+                <div>
+                    <div className="header-wrapper">
+                        <div className="block-left">
+                            <div className={"air-block"}>
+                                <img alt={"funkoa logo"} src={"/favicon.ico"} />
+                            </div>
+                        </div>
+                        <div className="block-center">
+                            <div className={"air-block"}>
+                                <img alt={"funkoa logo"} src={"/favicon.ico"} />
+                            </div>
+                        </div>
+                        <div className="block-right">
+                            <div className={"air-block"}>
+                                <img alt={"funkoa logo"} src={"/favicon.ico"} />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="body-wrapper">
+                        <Switch>
+                            <Route path="/about">
+                                <About />
+                            </Route>
+                            <Route path="/admin">
+                                <Admin />
+                            </Route>
+                            <Route path="/">
+                                <Home />
+                            </Route>
+                        </Switch>
+                    </div>
+                </div>
+            </div>
+        </Router>
+    );
+};
 
 export default App;

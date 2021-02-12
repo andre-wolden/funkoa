@@ -1,0 +1,22 @@
+
+
+.h1-welcome {
+    border: 1px dotted red;
+    font-size: 172px;
+    font-family: Mango;
+}
+
+@media (max-width: 600px) {
+    .h1-welcome {
+        font-size: 72px;
+    }
+}
+.mango-petit {
+    font-family: Mango;
+    color: red;
+}
+
+@font-face {
+    font-family: Mango;
+    src: url("Mango-Regular.woff") format("woff");
+}
