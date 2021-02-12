@@ -5,3 +5,7 @@
 .pina {
   width: 400px;
 }
+
+.header-wrapper {
+  border: 1px dotted red;
+}
