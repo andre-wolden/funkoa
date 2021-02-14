@@ -1,9 +1,14 @@
-
-
-.h1-welcome {
-    border: 1px dotted red;
-    font-size: 172px;
+@font-face {
     font-family: Mango;
+    src: url("Mango-Regular.woff") format("woff");
+}
+
+@media (min-width: 901px) {
+    .h1-welcome {
+        /*border: 1px dotted red;*/
+        font-size: 172px;
+        font-family: Mango;
+    }
 }
 
 @media (max-width: 900px) {
@@ -11,12 +16,27 @@
         font-size: 72px;
     }
 }
-.mango-petit {
-    font-family: Mango;
-    color: red;
+
+.home-introtext-wrapper {
+    background-color: white;
+    display: inline-block;
+    padding: 2rem;
+    border-radius: 2rem;
 }
 
-@font-face {
-    font-family: Mango;
-    src: url("Mango-Regular.woff") format("woff");
+.home-paragraph-1 {
+    /*border: 1px dotted red;*/
+    font-size: 32px;
+    font-weight: bolder;
+    color: black;
+    font-family: 'Newsreader', serif;
+
+}
+
+.home-paragraph-2 {
+    /*border: 1px dotted red;*/
+    font-size: 18px;
+    font-weight: bold;
+    color: #4f6d7a;
+    font-family: 'Newsreader', serif;
 }
