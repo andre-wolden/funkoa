@@ -101,8 +101,9 @@ const TheClusterArticle = (): JSX.Element => {
                 Pi&apos;s. Next on the todo list:
             </p>
             <ul>
-                <li></li>
+                <li>TBD</li>
             </ul>
+            <img className="the-cluster-article-images" src="images/cluster-initial-set-up.jpg" alt="initial set-up of the pis"></img>
         </div>
     );
 };

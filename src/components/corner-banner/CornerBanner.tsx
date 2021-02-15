@@ -1,16 +1,12 @@
 import React from "react";
-import "./corner-banner.css"
+import "./corner-banner.css";
 
-export interface CornerBannerProps {
-    text: string;
-}
-
-const CornerBanner = (props: CornerBannerProps): JSX.Element => {
+const CornerBanner = (): JSX.Element => {
     return (
         <div className="corner-banner-wrapper">
-            {props.text}
+            <img src="images/under-construction.svg" alt="site under construction banner" />
         </div>
-    )
+    );
 };
 
 export default CornerBanner;

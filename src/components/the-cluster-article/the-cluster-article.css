@@ -6,3 +6,7 @@
 .article-wrapper h3 {
     margin-top: 4rem;
 }
+
+.the-cluster-article-images {
+    max-width: 300px;
+}

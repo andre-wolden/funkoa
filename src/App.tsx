@@ -14,7 +14,7 @@ const App = (): JSX.Element => {
     return (
         <Router>
             <div>
-                <CornerBanner text={"Site under construction"} />
+                <CornerBanner />
                 <div>
                     <Burger
                         routes={[
