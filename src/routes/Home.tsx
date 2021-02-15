@@ -15,7 +15,6 @@ const Home = (): JSX.Element => {
                 </p>
                 <p>It runs on our private kubernetes cluster. So far it consists of three Raspberry Pi 4&apos;s.</p>
             </div>
-            <TheClusterArticle />
         </div>
     );
 };

@@ -7,14 +7,14 @@ const TheClusterArticle = (): JSX.Element => {
 
             <h3>What have I built?</h3>
             <p>
-                Cluster at home. Built with three raspberry pi 4`&apos;`s (Planning to add more when necessary). It is
-                running kubernetes. The pi`&apos;`s are running Ubuntu. Github actions (or anything else) can be used to
+                Cluster at home. Built with three raspberry pi 4&apos;s (Planning to add more when necessary). It is
+                running kubernetes. The pi&apos;s are running Ubuntu. Github actions (or anything else) can be used to
                 automatially deploy applications to the cluster. The cluster uses Traefik to
             </p>
 
             <h3>Why did I want to build this?</h3>
             <ul>
-                <li>`&quot;`Free`&quot;` to deploy any apps I want</li>
+                <li>&quot;Free&quot; to deploy any apps I want</li>
                 <li>
                     Practice Docker and Kubernetes, and all sorts of other things that must be set up. For example
                     setting up servers, tls, automatic build and deploy pipelines, ingresses, etc. It can be expensive
@@ -72,7 +72,7 @@ const TheClusterArticle = (): JSX.Element => {
                     </p>
                     <p>
                         This awesome video increased my understanding a lot of the whole thing. I used the same approach
-                        as Jeff Geerling to install Kubernetes on all the Pi`&apos;`s with the Ansible playbook that he
+                        as Jeff Geerling to install Kubernetes on all the Pi&apos;s with the Ansible playbook that he
                         mentioned.
                     </p>
                 </li>
@@ -84,7 +84,7 @@ const TheClusterArticle = (): JSX.Element => {
                         </a>
                     </p>
                     <p>
-                        I followed Jeff Geerling`&apos;`s guide to install Prometheus and Grafana on the cluster by use
+                        I followed Jeff Geerling&apos;s guide to install Prometheus and Grafana on the cluster by use
                         of the mentioned Ansible Playbook.
                     </p>
                 </li>

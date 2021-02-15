@@ -5,13 +5,23 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./routes/Home";
 import About from "./routes/About";
 import Admin from "./routes/Admin";
+import TheClusterArticleRoute from "./routes/TheClusterArticleRoute";
+import NotFoundRoute from "./routes/NotFoundRoute";
+import { RouteConfig } from "./configurations/routeConfig";
 
 const App = (): JSX.Element => {
     return (
         <Router>
             <div>
                 <div>
-                    <Burger />
+                    <Burger
+                        routes={[
+                            { linkName: "Home", path: RouteConfig.HOME },
+                            { linkName: "About", path: RouteConfig.ABOUT },
+                            { linkName: "The Cluster Article", path: RouteConfig.ARTICLES },
+                            { linkName: "Admin", path: RouteConfig.ADMIN },
+                        ]}
+                    />
                 </div>
                 <div>
                     <div className="header-wrapper">
@@ -33,14 +43,20 @@ const App = (): JSX.Element => {
                     </div>
                     <div className="body-wrapper">
                         <Switch>
-                            <Route path="/about">
+                            <Route path="/" exact>
+                                <Home />
+                            </Route>
+                            <Route path="/about" exact>
                                 <About />
                             </Route>
-                            <Route path="/admin">
+                            <Route path="/admin" exact>
                                 <Admin />
                             </Route>
-                            <Route path="/">
-                                <Home />
+                            <Route path="/articles" exact>
+                                <TheClusterArticleRoute />
+                            </Route>
+                            <Route>
+                                <NotFoundRoute />
                             </Route>
                         </Switch>
                     </div>

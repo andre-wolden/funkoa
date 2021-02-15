@@ -1,0 +1,22 @@
+
+.article-wrapper {
+    display: flex;
+    justify-content: center;
+    border: 3px dotted green;
+}
+
+.article-body {
+    padding: 3rem;
+    text-align: left;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 3rem;
+
+}
+
+.article-wrapper h2 {
+
+}
+.article-wrapper h3 {
+    margin-top: 4rem;
+}
