@@ -26,7 +26,6 @@ const Burger = (props: BurgerProps): JSX.Element => {
                         to={route.path}
                         onClick={() => {
                             setIsMenuOpen(false);
-                            console.warn("Should close");
                         }}>
                         {route.linkName}
                     </Link>
