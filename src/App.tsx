@@ -8,11 +8,13 @@ import About from "./routes/about/About";
 import Admin from "./routes/admin/Admin";
 import ArticlesRoute from "./routes/articles/ArticlesRoute";
 import NotFoundRoute from "./routes/not-found-route/NotFoundRoute";
+import CornerBanner from "./components/corner-banner/CornerBanner";
 
 const App = (): JSX.Element => {
     return (
         <Router>
             <div>
+                <CornerBanner text={"Site under construction"} />
                 <div>
                     <Burger
                         routes={[

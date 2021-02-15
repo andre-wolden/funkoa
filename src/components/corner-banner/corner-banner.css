@@ -1,0 +1,25 @@
+.corner-banner-wrapper {
+    position: absolute;
+    top: 80px;
+    right: -120px;
+    border: 0;
+    transform: rotate(45deg);
+    background-color: #64CEAA;
+    width: 500px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+}
+
+@media (max-width: 900px){
+    .corner-banner-wrapper {
+        top: 40px;
+        right: -60px;
+        width: 250px;
+        height: 50px;
+        font-size: 12px;
+    }
+}
