@@ -3,6 +3,11 @@
     src: url("Mango-Regular.woff") format("woff");
 }
 
+.h1-welcome {
+    font-family: 'Newsreader', serif;
+
+}
+
 @media (min-width: 901px) {
     .h1-welcome {
         /*border: 1px dotted red;*/
