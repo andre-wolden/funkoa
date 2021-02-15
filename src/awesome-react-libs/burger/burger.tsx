@@ -1,8 +1,8 @@
-import React from "react";
-import { slide as Menu } from "react-burger-menu";
+import React, { useState } from "react";
+import { elastic as Menu } from "react-burger-menu";
 import "./burger.css";
-import { Link } from "react-router-dom";
 import { Route, Routes } from "../../types/Routes";
+import { Link } from "react-router-dom";
 
 export interface BurgerProps {
     routes: Routes;
@@ -10,11 +10,24 @@ export interface BurgerProps {
 
 const Burger = (props: BurgerProps): JSX.Element => {
     const { routes } = props;
+
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
     return (
-        <Menu>
+        <Menu
+            disableAutoFocus
+            isOpen={isMenuOpen}
+            onOpen={() => setIsMenuOpen(true)}
+            onClose={() => setIsMenuOpen(false)}>
             {routes.map((route: Route) => (
                 <div key={route.path} id="home" className="menu-item-wrapper">
-                    <Link className="menu-item-link" to={route.path}>
+                    <Link
+                        className="menu-item-link"
+                        to={route.path}
+                        onClick={() => {
+                            setIsMenuOpen(false);
+                            console.warn("Should close");
+                        }}>
                         {route.linkName}
                     </Link>
                 </div>

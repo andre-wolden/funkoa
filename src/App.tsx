@@ -2,12 +2,12 @@ import React from "react";
 import "./App.css";
 import Burger from "./awesome-react-libs/burger/burger";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from "./routes/Home";
-import About from "./routes/About";
-import Admin from "./routes/Admin";
-import TheClusterArticleRoute from "./routes/TheClusterArticleRoute";
-import NotFoundRoute from "./routes/NotFoundRoute";
 import { RouteConfig } from "./configurations/routeConfig";
+import Home from "./routes/home/Home";
+import About from "./routes/about/About";
+import Admin from "./routes/admin/Admin";
+import ArticlesRoute from "./routes/articles/ArticlesRoute";
+import NotFoundRoute from "./routes/not-found-route/NotFoundRoute";
 
 const App = (): JSX.Element => {
     return (
@@ -53,7 +53,7 @@ const App = (): JSX.Element => {
                                 <Admin />
                             </Route>
                             <Route path="/articles" exact>
-                                <TheClusterArticleRoute />
+                                <ArticlesRoute />
                             </Route>
                             <Route>
                                 <NotFoundRoute />

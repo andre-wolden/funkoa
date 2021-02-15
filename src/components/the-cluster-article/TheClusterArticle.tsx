@@ -1,28 +1,35 @@
 import React from "react";
+import "./the-cluster-article.css";
 
 const TheClusterArticle = (): JSX.Element => {
     return (
         <div className="the-cluster-article">
-            <h2>The story of building a pi-cluster</h2>
+            <h2>Kubernetes on Raspberry Pi&apos;s</h2>
+
+            <p>How and why I built my own Kubernetes cluster using Raspberry Pi&apos;s</p>
 
             <h3>What have I built?</h3>
             <p>
-                Cluster at home. Built with three raspberry pi 4&apos;s (Planning to add more when necessary). It is
-                running kubernetes. The pi&apos;s are running Ubuntu. Github actions (or anything else) can be used to
-                automatially deploy applications to the cluster. The cluster uses Traefik to
+                I have built a cluster at home running Kubernetes with three raspberry pi 4&apos;s (Planning to add more
+                when necessary). The pi&apos;s are running Ubuntu. Github actions (or anything else) can be used to
+                automatially deploy applications to the cluster. The cluster uses Træfik to enable public access to the
+                applications running in the cluster and to handle TLS (to get https).
             </p>
 
             <h3>Why did I want to build this?</h3>
             <ul>
-                <li>&quot;Free&quot; to deploy any apps I want</li>
+                <li>
+                    &quot;Free&quot; to deploy any apps I want, instead of paying around $10 a month for each hobby-app
+                    deployed to a cloud provider.
+                </li>
                 <li>
                     Practice Docker and Kubernetes, and all sorts of other things that must be set up. For example
                     setting up servers, tls, automatic build and deploy pipelines, ingresses, etc. It can be expensive
                     to run a full kubernetes cluster in the cloud just for practice and fun.
                 </li>
                 <li>
-                    Have a place where all things has to be done by oneself, instead of just clicking buttons at a cloud
-                    provider.
+                    Have a place where all things has to be done manually, instead of just clicking buttons at a cloud
+                    provider and using their api&apos;s.
                 </li>
             </ul>
 
@@ -84,12 +91,18 @@ const TheClusterArticle = (): JSX.Element => {
                         </a>
                     </p>
                     <p>
-                        I followed Jeff Geerling&apos;s guide to install Prometheus and Grafana on the cluster by use
-                        of the mentioned Ansible Playbook.
+                        I followed Jeff Geerling&apos;s guide to install Prometheus and Grafana on the cluster by use of
+                        the mentioned Ansible Playbook.
                     </p>
                 </li>
             </ul>
-            <p>At this point the most important stuff has been set up, but I still had some</p>
+            <p>
+                At this point the most important stuff has been set up, a kubernetes cluster running on Raspberry
+                Pi&apos;s. Next on the todo list:
+            </p>
+            <ul>
+                <li></li>
+            </ul>
         </div>
     );
 };
