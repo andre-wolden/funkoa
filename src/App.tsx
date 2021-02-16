@@ -9,40 +9,23 @@ import Admin from "./routes/admin/Admin";
 import ArticlesRoute from "./routes/articles/ArticlesRoute";
 import NotFoundRoute from "./routes/not-found-route/NotFoundRoute";
 import CornerBanner from "./components/corner-banner/CornerBanner";
+import Header from "./components/header/Header";
 
 const App = (): JSX.Element => {
     return (
         <Router>
             <div>
+                <Header />
                 <CornerBanner />
+                <Burger
+                    routes={[
+                        { linkName: "Home", path: RouteConfig.HOME },
+                        { linkName: "About", path: RouteConfig.ABOUT },
+                        { linkName: "The Cluster Article", path: RouteConfig.ARTICLES },
+                        { linkName: "Admin", path: RouteConfig.ADMIN },
+                    ]}
+                />
                 <div>
-                    <Burger
-                        routes={[
-                            { linkName: "Home", path: RouteConfig.HOME },
-                            { linkName: "About", path: RouteConfig.ABOUT },
-                            { linkName: "The Cluster Article", path: RouteConfig.ARTICLES },
-                            { linkName: "Admin", path: RouteConfig.ADMIN },
-                        ]}
-                    />
-                </div>
-                <div>
-                    <div className="header-wrapper">
-                        <div className="block-left">
-                            <div className={"air-block"}>
-                                <img alt={"funkoa logo"} src={"/favicon.ico"} />
-                            </div>
-                        </div>
-                        <div className="block-center">
-                            <div className={"air-block"}>
-                                <img alt={"funkoa logo"} src={"/favicon.ico"} />
-                            </div>
-                        </div>
-                        <div className="block-right">
-                            <div className={"air-block"}>
-                                <img alt={"funkoa logo"} src={"/favicon.ico"} />
-                            </div>
-                        </div>
-                    </div>
                     <div className="body-wrapper">
                         <Switch>
                             <Route path="/" exact>

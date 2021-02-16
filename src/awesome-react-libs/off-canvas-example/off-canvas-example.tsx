@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { OffCanvas, OffCanvasBody, OffCanvasMenu } from "react-offcanvas";
+import "./styles.css";
 
 const OffCanvasExample = (): JSX.Element => {
     const [isOffCanvasMenuOpen, setIsOpen] = useState<boolean>(false);
@@ -11,16 +12,13 @@ const OffCanvasExample = (): JSX.Element => {
             effect={"parallax"}
             isMenuOpened={isOffCanvasMenuOpen}
             position={"right"}>
-            <OffCanvasBody style={{ fontSize: "30px" }}>
+            <OffCanvasBody className="bodyClass" style={{ fontSize: "30px" }}>
                 <p>This is the main body container.</p>
                 <p>
-                    <button onClick={() => setIsOpen(!isOffCanvasMenuOpen)}>
-                        Click here
-                    </button>{" "}
-                    to toggle the menu.
+                    <button onClick={() => setIsOpen(!isOffCanvasMenuOpen)}>Click here</button> to toggle the menu.
                 </p>
             </OffCanvasBody>
-            <OffCanvasMenu>
+            <OffCanvasMenu className="menuClass">
                 <p>Placeholder content.</p>
                 <ul>
                     <li>Link 1</li>
