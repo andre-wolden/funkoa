@@ -10,6 +10,10 @@ import ArticlesRoute from "./routes/articles/ArticlesRoute";
 import NotFoundRoute from "./routes/not-found-route/NotFoundRoute";
 import CornerBanner from "./components/corner-banner/CornerBanner";
 import Header from "./components/header/Header";
+import HomeIcon from "@material-ui/icons/Home";
+import InfoIcon from "@material-ui/icons/Info";
+import MenuBookIcon from '@material-ui/icons/MenuBook';
+import SettingsIcon from '@material-ui/icons/Settings';
 
 const App = (): JSX.Element => {
     return (
@@ -19,10 +23,10 @@ const App = (): JSX.Element => {
                 <CornerBanner />
                 <Burger
                     routes={[
-                        { linkName: "Home", path: RouteConfig.HOME },
-                        { linkName: "About", path: RouteConfig.ABOUT },
-                        { linkName: "The Cluster Article", path: RouteConfig.ARTICLES },
-                        { linkName: "Admin", path: RouteConfig.ADMIN },
+                        { linkName: "Home", path: RouteConfig.HOME, icon: <HomeIcon /> },
+                        { linkName: "About", path: RouteConfig.ABOUT, icon: <InfoIcon /> },
+                        { linkName: "The Cluster Article", path: RouteConfig.ARTICLES, icon: <MenuBookIcon /> },
+                        { linkName: "Admin", path: RouteConfig.ADMIN, icon: <SettingsIcon /> },
                     ]}
                 />
                 <div>

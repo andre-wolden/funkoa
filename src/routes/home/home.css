@@ -4,15 +4,13 @@
 }
 
 .h1-welcome {
-    font-family: 'Newsreader', serif;
-
+    font-family: Mango;
 }
 
 @media (min-width: 901px) {
     .h1-welcome {
-        /*border: 1px dotted red;*/
         font-size: 172px;
-        font-family: Mango;
+
     }
 }
 
@@ -30,18 +28,13 @@
 }
 
 .home-paragraph-1 {
-    /*border: 1px dotted red;*/
     font-size: 32px;
     font-weight: bolder;
     color: black;
-    font-family: 'Newsreader', serif;
-
 }
 
 .home-paragraph-2 {
-    /*border: 1px dotted red;*/
     font-size: 18px;
     font-weight: bold;
     color: #4f6d7a;
-    font-family: 'Newsreader', serif;
 }

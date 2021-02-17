@@ -66,12 +66,27 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 /* My own stuff */
+.menu-content-wrapper {
+}
+
 .menu-item-wrapper {
-    margin: 40px;
+    display: block;
+
+}
+
+.menu-item-line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.menu-item-icon-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 12px;
 }
 
 .menu-item-link {
-    /*border: 1px dotted red;*/
     color: ghostwhite;
     text-decoration: none;
 }
