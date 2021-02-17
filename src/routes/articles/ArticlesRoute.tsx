@@ -5,9 +5,7 @@ import TheClusterArticle from "../../components/the-cluster-article/TheClusterAr
 const ArticlesRoute = (): JSX.Element => {
     return (
         <div className="articles-wrapper">
-            <div className="articles-body">
-                <TheClusterArticle />
-            </div>
+            <TheClusterArticle />
         </div>
     );
 };

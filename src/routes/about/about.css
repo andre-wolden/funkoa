@@ -1,21 +1,13 @@
 
 
-.example-body-wrapper {
-    display: flex;
-    justify-content: center;
-    margin: 3rem;
-}
-.example-body {
-    max-width: 900px;
-    background-color: white;
-    border-radius: 2rem;
+.about-wrapper {
+    text-align: center;
 }
 
-.example-body p {
+.about-wrapper p {
     margin: 2rem;
     text-align: left;
     line-height: 150%;
-
 }
 
 

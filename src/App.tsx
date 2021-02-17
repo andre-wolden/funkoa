@@ -12,8 +12,8 @@ import CornerBanner from "./components/corner-banner/CornerBanner";
 import Header from "./components/header/Header";
 import HomeIcon from "@material-ui/icons/Home";
 import InfoIcon from "@material-ui/icons/Info";
-import MenuBookIcon from '@material-ui/icons/MenuBook';
-import SettingsIcon from '@material-ui/icons/Settings';
+import MenuBookIcon from "@material-ui/icons/MenuBook";
+import SettingsIcon from "@material-ui/icons/Settings";
 
 const App = (): JSX.Element => {
     return (
@@ -29,8 +29,8 @@ const App = (): JSX.Element => {
                         { linkName: "Admin", path: RouteConfig.ADMIN, icon: <SettingsIcon /> },
                     ]}
                 />
-                <div>
-                    <div className="body-wrapper">
+                <div className="body-wrapper">
+                    <div className="body-column">
                         <Switch>
                             <Route path="/" exact>
                                 <Home />

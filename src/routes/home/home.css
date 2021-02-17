@@ -1,34 +1,5 @@
-@font-face {
-    font-family: Mango;
-    src: url("Mango-Regular.woff") format("woff");
-}
-
-.h1-welcome {
-    font-family: Mango;
-}
-
-@media (min-width: 901px) {
-    .h1-welcome {
-        font-size: 172px;
-
-    }
-}
-
-@media (max-width: 900px) {
-    .h1-welcome {
-        font-size: 72px;
-    }
-}
-
 .home-wrapper {
-    margin: 2rem;
-}
-
-.home-introtext-wrapper {
-    background-color: white;
-    display: inline-block;
-    padding: 2rem;
-    border-radius: 2rem;
+    text-align: center;
 }
 
 .home-paragraph-1 {

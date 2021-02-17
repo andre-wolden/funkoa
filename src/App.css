@@ -1,3 +1,12 @@
 .body-wrapper {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.body-column {
+    max-width: 900px;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
 }

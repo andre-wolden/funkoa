@@ -1,16 +1,22 @@
 import React from "react";
 import LoremIpsum from "../../components/LoremIpsum";
 import "./about.css";
+import UiPaper from "../../components/paper/UiPaper";
+import StyleHeaderOne, {StyledHeaderSize} from "../../components/stylish-h1/StyleHeaderOne";
 
 const About = (): JSX.Element => {
     return (
-        <div className="example-body-wrapper">
-            <div className="example-body">
-                <h2>About</h2>
+        <div className="about-wrapper">
+            <StyleHeaderOne size={StyledHeaderSize.MEDIUM}>ABOUT</StyleHeaderOne>
+            <UiPaper>
                 <LoremIpsum />
+            </UiPaper>
+            <UiPaper>
                 <LoremIpsum />
+            </UiPaper>
+            <UiPaper>
                 <LoremIpsum />
-            </div>
+            </UiPaper>
         </div>
     );
 };

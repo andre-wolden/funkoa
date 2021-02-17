@@ -1,14 +1,5 @@
 .articles-wrapper {
-    display: flex;
-    justify-content: center;
 }
 
 .articles-body {
-    margin: 3rem;
-    padding: 1rem;
-    text-align: left;
-    max-width: 900px;
-    background-color: white;
-    border-radius: 3rem;
-
 }
