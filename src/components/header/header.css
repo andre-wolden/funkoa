@@ -11,3 +11,17 @@
     justify-content: center;
     align-items: center;
 }
+
+.header-koa-logo {
+    width: 80px;
+}
+.header-text-center {
+    position: center;
+    font-size: 48px;
+    font-weight: bolder;
+    color: #264653;
+}
+.header-logo-right {
+    position: absolute;
+    right: 20px;
+}

@@ -20,6 +20,10 @@
     }
 }
 
+.home-wrapper {
+    margin: 2rem;
+}
+
 .home-introtext-wrapper {
     background-color: white;
     display: inline-block;
@@ -34,7 +38,7 @@
 }
 
 .home-paragraph-2 {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
-    color: #4f6d7a;
+    color: #adb5bd;
 }

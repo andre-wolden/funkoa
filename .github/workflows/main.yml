@@ -52,7 +52,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: woldena/funkoa:1.11
+          tags: woldena/funkoa:1.12
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
