@@ -4,10 +4,15 @@
     text-align: center;
 }
 
+.about-cards-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
 .about-wrapper p {
     margin: 2rem;
     text-align: left;
-    line-height: 150%;
+    line-height: 180%;
 }
 
 

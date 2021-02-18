@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1000"
+   height="1000"
+   viewBox="0 0 264.58333 264.58334"
+   version="1.1"
+   id="svg895"
+   inkscape:version="1.0.2 (e86c8708, 2021-01-15)"
+   sodipodi:docname="picture-coming.svg">
+  <defs
+     id="defs889">
+    <rect
+       x="65.049576"
+       y="170.32304"
+       width="129.1564"
+       height="26.08268"
+       id="rect1494" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.51419122"
+     inkscape:cx="138.84311"
+     inkscape:cy="619.68422"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     inkscape:snap-intersection-paths="false"
+     inkscape:window-width="1680"
+     inkscape:window-height="997"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata892">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="fill:none;stroke:#2a9d8f;stroke-width:10.7992"
+       id="path897"
+       cx="131.98265"
+       cy="132.3853"
+       r="122.81094" />
+    <path
+       id="path903-1"
+       style="fill:none;stroke:#2a9d8f;stroke-width:6.88669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 173.06459,124.98485 v 33.59686 M 91.676369,124.98485 v 33.59686 m 0,-33.5104 a 40.694137,39.496517 0 0 1 -3.3e-5,-0.0426 40.694137,39.496517 0 0 1 40.694154,-39.49652 40.694137,39.496517 0 0 1 40.6941,39.45273 m -16.5244,-67.78151 a 24.16971,24.16971 0 0 1 -24.16972,24.169727 24.16971,24.16971 0 0 1 -24.1697,-24.169727 24.16971,24.16971 0 0 1 24.1697,-24.16971 24.16971,24.16971 0 0 1 24.16972,24.16971 z" />
+    <text
+       xml:space="preserve"
+       id="text1492"
+       style="font-style:normal;font-weight:normal;font-size:10.58329999999999949px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect1494);fill:#2a9d8f;fill-opacity:1;stroke:#2a9d8f;stroke-width:1.05833;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
+       transform="matrix(1.6267777,0,0,1.6267777,-56.601037,-91.308114)"><tspan
+         x="65.048828"
+         y="180.62147"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#2a9d8f;fill-opacity:1;stroke:#2a9d8f;stroke-width:1.05833;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">PICTURE COMING</tspan></tspan></text>
+  </g>
+</svg>
