@@ -45,14 +45,14 @@ spec:
     - host: www.funkoa.com
       http:
         paths:
-          - path: /
+          - path: /$
             backend:
               serviceName: funkoa
               servicePort: http
     - host: funkoa.com
       http:
         paths:
-          - path: /
+          - path: /$
             backend:
               serviceName: funkoa
               servicePort: http
