@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: funkoa
-          image: woldena/funkoa:1.15
+          image: woldena/funkoa:1.16
           ports:
             - containerPort: 80
 ---
@@ -45,14 +45,14 @@ spec:
     - host: www.funkoa.com
       http:
         paths:
-          - path: /$
+          - path: /
             backend:
               serviceName: funkoa
               servicePort: http
     - host: funkoa.com
       http:
         paths:
-          - path: /$
+          - path: /
             backend:
               serviceName: funkoa
               servicePort: http
