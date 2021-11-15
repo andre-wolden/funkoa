@@ -109,6 +109,31 @@ const TheClusterArticle = (): JSX.Element => {
                     className="the-cluster-article-images"
                     src="images/cluster-initial-set-up.jpg"
                     alt="initial set-up of the pis"></img>
+                <h3>Update 2021-11-15: Improved setup</h3>
+                <p>
+                    The pi&apos;s got very warm, so I bought a cooling unit. Now the temperatures are a little bit more
+                    under control. And it looks much better :)
+                </p>
+                <div>
+
+                    <img
+                        className="the-cluster-article-images-improved"
+                        src="images/cluster-improved-setup-1.jpg"
+                        alt="improved setup angle 1"></img>
+                </div>
+
+                <div>
+                    <img
+                        className="the-cluster-article-images-improved"
+                        src="images/cluster-improved-setup-2.jpg"
+                        alt="improved setup angle 2"></img>
+                </div>
+                <div>
+                    <img
+                        className="the-cluster-article-images-improved"
+                        src="images/cluster-improved-setup-3.jpg"
+                        alt="improved setup angle 3"></img>
+                </div>
             </div>
         </UiPaper>
     );

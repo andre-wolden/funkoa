@@ -10,3 +10,16 @@
     display: flex;
     justify-content: center;
 }
+
+.pi-cluster-picture-wrapper {
+    text-align: center;
+}
+
+.pi-cluster-picture {
+    width: auto;
+    height: auto;
+    max-height: 30rem;
+    /*max-width: 400px;*/
+
+    object-fit: contain;
+}

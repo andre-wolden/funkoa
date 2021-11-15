@@ -5,6 +5,8 @@
 
 .h1-welcome {
     font-family: Mango;
+    width: 100%;
+    text-align: center;
 }
 
 @media (min-width: 901px) {

@@ -12,6 +12,14 @@ const Home = (): JSX.Element => {
                 <p className="home-paragraph-2">KoA - Karsten og André (which in english will be Karsten and André)</p>
                 <p>It runs on our private kubernetes cluster. So far it consists of three Raspberry Pi 4&apos;s. \0/</p>
             </UiPaper>
+            <UiPaper>
+                <div className={'pi-cluster-picture-wrapper'}>
+                    <div className="home-paragraph-1">Here is a picture of the Cluster !</div>
+
+                    <img className={'pi-cluster-picture'} alt={'Raspberry Pi cluster'} src={'images/cluster-improved-setup-3.jpg'} />
+
+                </div>
+            </UiPaper>
         </div>
     );
 };

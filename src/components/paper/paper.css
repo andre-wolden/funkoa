@@ -1,5 +1,8 @@
 .ui-paper {
     margin-top: 2rem;
+    margin-bottom: 4rem;
     padding: 1rem;
     background-color: #faf9f9;
+    width: 90%;
+    max-width: 90%;
 }
